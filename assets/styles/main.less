@@ -1,0 +1,59 @@
+.product-card {
+    margin: 40px auto;
+    max-width: 340px;
+
+    a.btn {
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#navbarNav {
+    flex-direction: row-reverse;
+}
+
+.price {
+    font-weight: bold;
+    position: absolute;
+    right: 21px;
+    bottom: 18px;
+    font-size: 28px;
+}
+
+.product-count {
+    color: white;
+    background-color: #ef444e;
+    border-radius: 50%;
+    min-width: 26px;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-sum {
+    border: 1px solid #292b2c;
+    min-width: 26px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 300px) {
+    .price {
+        position: static;
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .price {
+        position: static;
+        display: block;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 justify-content-md-center" ng-repeat="item in vm.basket">
+            <div class="card product-card">
+                <img class="card-img-top img-fluid" ng-src="{{'assets/' + item.product.img}}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">{{item.product.name}}</h4>
+                    <p class="card-text">{{item.product.description}}</p>
+                    <a class="btn btn-primary" ng-click="vm.decrease(item.product)">-</a>
+                    <span>{{item.count}}</span>
+                    <a class="btn btn-primary" ng-click="vm.increase(item.product)">+</a>
+                    <span class="price">{{item.product.price | currency:"$"}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
